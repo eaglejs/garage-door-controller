@@ -123,11 +123,11 @@ class Controller():
                     title = "%s's garage door open" % door.name
                     message = "%s's garage door has been open for %s" % (door.name,
                                                                      elapsed_time(int(time.time() - door.open_time)))
-                    if self.alert_type == 'smtp':
+                    if self.alert_type is 'smtp':
                         self.send_email(title, message)
-                    elif self.alert_type == 'pushbullet':
+                    elif self.alert_type is 'pushbullet':
                         self.send_pushbullet(door, title, message)
-                    elif self.alert_type == 'pushover':
+                    elif self.alert_type is 'pushover':
                         self.send_pushover(door, title, message)
                     door.msg_sent = True
 

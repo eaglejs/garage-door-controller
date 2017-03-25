@@ -7,8 +7,8 @@
 },
 "alerts":
 {
-	"time_to_wait" : 10,
-	"alert_type" : None,
+	"time_to_wait" : 15,
+	"alert_type" : "None",
         "smtp":
 		{
 		"smtphost" : "<SMTP HOST>",
@@ -41,25 +41,15 @@
 	},
 "doors" : 
 	{
-		"left" : 
+		"main" : 
 			{
-			"name" : "LEFT",
+			"name" : "MAIN",
 			"relay_pin" : 23,
 			"state_pin" : 17,
 			"state_pin_closed_value" : 0,
 			"approx_time_to_close" : 15,
 			"approx_time_to_open" : 15,
 			"openhab_name" : "g_door_left"
-			},
-		"right" : 
-			{
-			"name" : "RIGHT",
-			"relay_pin" : 24,
-			"state_pin" : 21,
-			"state_pin_closed_value" : 0,
-			"approx_time_to_close" : 15,
-			"approx_time_to_open" : 15,
-			"openhab_name" : "g_door_right"
 			}
 	}
 }
