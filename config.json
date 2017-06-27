@@ -8,7 +8,7 @@
 "alerts":
 {
 	"time_to_wait" : 15,
-	"alert_type" : "None",
+	"alert_type" : null,
         "smtp":
 		{
 		"smtphost" : "<SMTP HOST>",
